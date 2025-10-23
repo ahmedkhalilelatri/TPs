@@ -1,0 +1,255 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8" pages="2">
+  <diagram name="Check Overdue" id="0">
+    <mxGraphModel dx="772" dy="509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title1" value="Check Overdue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="20" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="app1" value=":Application" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="120" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="appAct1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="app1" vertex="1">
+          <mxGeometry x="55" y="80" width="10" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="member1" value="m:Member" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="450" y="80" width="120" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="memberAct1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="member1" vertex="1">
+          <mxGeometry x="55" y="130" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="memberAct2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="member1" vertex="1">
+          <mxGeometry x="55" y="410" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="loan1" value="l:Loan" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="700" y="80" width="120" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="loanAct1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="loan1" vertex="1">
+          <mxGeometry x="55" y="280" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="msg1_1" value="1: checkOverdue()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry x="-0.0769" width="80" relative="1" as="geometry">
+            <mxPoint x="265" y="160" as="sourcePoint" />
+            <mxPoint x="265" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="160" />
+              <mxPoint x="330" y="190" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg1_2" value="2: getLoans()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="265" y="210" as="sourcePoint" />
+            <mxPoint x="505" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg1_3" value="loans" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=12;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="240" as="sourcePoint" />
+            <mxPoint x="265" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loop1" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;width=60;height=30;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="220" y="270" width="640" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="loopCond1" value="[for each loan]" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="265" y="290" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="msg1_4" value="3: getReturnDate()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="265" y="320" as="sourcePoint" />
+            <mxPoint x="755" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg1_5" value="returnDate" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=12;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="350" as="sourcePoint" />
+            <mxPoint x="265" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="alt1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=45;height=28;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="240" y="380" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="altCond1" value="[returnDate has passed]" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="265" y="393" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="msg1_6" value="4: setStatus(suspended)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="265" y="430" as="sourcePoint" />
+            <mxPoint x="505" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Borrow a Book" id="1">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title2" value="Borrow a Book" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="550" y="20" width="300" height="40" as="geometry" />
+        </mxCell>
+        <!-- Librarian Lifeline -->
+        <mxCell id="librarian" value=":Librarian" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="100" y="80" width="100" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="libAct1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="librarian" vertex="1">
+          <mxGeometry x="45" y="80" width="10" height="40" as="geometry" />
+        </mxCell>
+        <!-- Application Lifeline -->
+        <mxCell id="app2" value=":Application" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="300" y="80" width="120" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="appAct2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="app2" vertex="1">
+          <mxGeometry x="55" y="80" width="10" height="850" as="geometry" />
+        </mxCell>
+        <!-- Member Lifeline -->
+        <mxCell id="member2" value="m:Member" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="550" y="80" width="120" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="memberAct3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="member2" vertex="1">
+          <mxGeometry x="55" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="memberAct4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="member2" vertex="1">
+          <mxGeometry x="55" y="260" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="memberAct5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="member2" vertex="1">
+          <mxGeometry x="55" y="760" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="memberAct6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="member2" vertex="1">
+          <mxGeometry x="55" y="840" width="10" height="40" as="geometry" />
+        </mxCell>
+        <!-- Book Lifeline -->
+        <mxCell id="book2" value="b:Book" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="800" y="80" width="120" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="bookAct1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="book2" vertex="1">
+          <mxGeometry x="55" y="510" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bookAct2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="book2" vertex="1">
+          <mxGeometry x="55" y="700" width="10" height="40" as="geometry" />
+        </mxCell>
+        <!-- Loan Lifeline -->
+        <mxCell id="loan2" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="620" width="120" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="loan2_label" value="loan:Loan" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="625" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="loanAct2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="loan2" vertex="1">
+          <mxGeometry x="55" y="60" width="10" height="60" as="geometry" />
+        </mxCell>
+        <!-- selectBorrow -->
+        <mxCell id="msg2_1" value="1: selectBorrow()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="155" y="160" as="sourcePoint" />
+            <mxPoint x="355" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Check member rights section -->
+        <mxCell id="note1" value="Check member rights" style="shape=note;whiteSpace=wrap;html=1;size=15;verticalAlign=top;align=left;spacingTop=-5;fontSize=11;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="260" y="200" width="140" height="40" as="geometry" />
+        </mxCell>
+        <!-- getStatus -->
+        <mxCell id="msg2_2" value="2: getStatus()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="260" as="sourcePoint" />
+            <mxPoint x="605" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- return status -->
+        <mxCell id="msg2_3" value="status" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=12;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605" y="290" as="sourcePoint" />
+            <mxPoint x="365" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- getNbBooksBorrowed -->
+        <mxCell id="msg2_4" value="3: getNbBooksBorrowed()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="340" as="sourcePoint" />
+            <mxPoint x="605" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- return nbBooks -->
+        <mxCell id="msg2_5" value="nbBooks" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=12;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605" y="370" as="sourcePoint" />
+            <mxPoint x="365" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- ref checkOverdue -->
+        <mxCell id="refFrame" value="ref" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=30;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="320" y="410" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="refText" value="checkOverdue" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="380" y="435" width="200" height="30" as="geometry" />
+        </mxCell>
+        <!-- Check book availability section -->
+        <mxCell id="note2" value="Check book availability" style="shape=note;whiteSpace=wrap;html=1;size=15;verticalAlign=top;align=left;spacingTop=-5;fontSize=11;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="260" y="520" width="150" height="40" as="geometry" />
+        </mxCell>
+        <!-- isAvailable -->
+        <mxCell id="msg2_6" value="4: isAvailable()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="590" as="sourcePoint" />
+            <mxPoint x="855" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- return available -->
+        <mxCell id="msg2_7" value="true" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=12;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="855" y="620" as="sourcePoint" />
+            <mxPoint x="365" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Alt Fragment -->
+        <mxCell id="alt2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=30;fontSize=12;fillColor=#f5f5f5;" parent="1" vertex="1">
+          <mxGeometry x="320" y="650" width="840" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="altCond2" value="[everything fine]" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="330" y="663" width="150" height="20" as="geometry" />
+        </mxCell>
+        <!-- create loan -->
+        <mxCell id="msg2_8" value="5: &lt;&lt;create&gt;&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;endFill=0;fontSize=12;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="680" as="sourcePoint" />
+            <mxPoint x="1055" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- setLoanDate and setReturnDate -->
+        <mxCell id="msg2_9" value="6: setDates(loanDate, returnDate)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="710" as="sourcePoint" />
+            <mxPoint x="1055" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- setAvailable -->
+        <mxCell id="msg2_10" value="7: setAvailable(false)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="760" as="sourcePoint" />
+            <mxPoint x="855" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- incrementNbBooks -->
+        <mxCell id="msg2_11" value="8: incrementNbBooks()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="840" as="sourcePoint" />
+            <mxPoint x="605" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- updateStatus -->
+        <mxCell id="msg2_12" value="9: updateStatus()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=12;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="880" as="sourcePoint" />
+            <mxPoint x="605" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
